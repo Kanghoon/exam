@@ -6,8 +6,12 @@ public class Calculator {
 
 	public GradeType calculate(int score) {
 
-		
-		return GradeType.A;
-	}
+		for (GradeType type : GradeType.values()) {
 
+			if (score >= type.getLowScore() && score <= type.getHighScore()) {
+				return type;
+			}
+		}
+		return GradeType.F;
+	}
 }

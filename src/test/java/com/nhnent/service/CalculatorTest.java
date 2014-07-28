@@ -20,9 +20,7 @@ public class CalculatorTest {
 	 */
 	@Test
 	public void testCalculate_90점_이상이면_A를_받는다() throws Exception {
-		
 		GradeType actual = calculator.calculate(96);
-		
 		assertEquals(GradeType.A, actual);
 	}
 	
@@ -33,27 +31,8 @@ public class CalculatorTest {
 	 */
 	@Test
 	public void testCalculate_80점에서_90점_사이면_B를_받는다() throws Exception {
-		
-	}
-	
-	/**
-	 * Test calculate_70점에서_80점_사이면_ c를_받는다.
-	 *
-	 * @throws Exception the exception
-	 */
-	@Test
-	public void testCalculate_70점에서_80점_사이면_C를_받는다() throws Exception {
-		
-	}
-	
-	/**
-	 * Test calculate_60점에서_70점_사이면_ d를_받는다.
-	 *
-	 * @throws Exception the exception
-	 */
-	@Test
-	public void testCalculate_60점에서_70점_사이면_D를_받는다() throws Exception {
-		
+		GradeType actual = calculator.calculate(85);
+		assertEquals(GradeType.B, actual);
 	}
 	
 	/**
@@ -63,6 +42,7 @@ public class CalculatorTest {
 	 */
 	@Test
 	public void testCalculate_60점_이하이면_F를_받는다() throws Exception {
-		
+		GradeType actual = calculator.calculate(50);
+		assertEquals(GradeType.F, actual);
 	}
 }
