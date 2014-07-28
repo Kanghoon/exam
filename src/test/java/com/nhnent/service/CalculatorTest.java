@@ -50,8 +50,13 @@ public class CalculatorTest {
 		assertEquals(GradeType.F, actual);
 	}
 	
+	/**
+	 * Test get total score_리스트형태로_학점을_넣으면_총점이_반환된다.
+	 *
+	 * @throws Exception the exception
+	 */
 	@Test
-	public void testGetTotalScore() throws Exception {
+	public void testGetTotalScore_리스트형태로_학점을_넣으면_총점이_반환된다() throws Exception {
 		int expected = 538;
 		
 		List<Integer> list = Arrays.asList(97, 80, 78, 86, 98, 99);
@@ -59,4 +64,5 @@ public class CalculatorTest {
 		
 		assertEquals(expected, actual);
 	}
+	
 }

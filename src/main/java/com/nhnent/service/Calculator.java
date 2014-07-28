@@ -18,9 +18,6 @@ public class Calculator {
 	}
 
 	public int getTotalScore(List<Integer> list) {
-
-		
-		
-		return 538;
+		return list.stream().mapToInt(e -> e).sum();
 	}
 }
