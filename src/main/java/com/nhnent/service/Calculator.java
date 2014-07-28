@@ -18,9 +18,12 @@ public class Calculator {
 	}
 
 	public int getTotalScore(List<Integer> list) {
-
+		int result = 0;
 		
+		for (int score : list) {
+			result += score; 
+		}
 		
-		return 538;
+		return result;
 	}
 }
