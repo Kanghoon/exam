@@ -2,6 +2,10 @@ package com.nhnent.service;
 
 import static org.junit.Assert.*;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
 import org.junit.Test;
 
 import com.nhnent.model.GradeType;
@@ -44,5 +48,15 @@ public class CalculatorTest {
 	public void testCalculate_60점_이하이면_F를_받는다() throws Exception {
 		GradeType actual = calculator.calculate(50);
 		assertEquals(GradeType.F, actual);
+	}
+	
+	@Test
+	public void testGetTotalScore() throws Exception {
+		int expected = 538;
+		
+		List<Integer> list = Arrays.asList(97, 80, 78, 86, 98, 99);
+		int actual = calculator.getTotalScore(list);
+		
+		assertEquals(expected, actual);
 	}
 }

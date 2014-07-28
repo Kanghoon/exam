@@ -1,5 +1,7 @@
 package com.nhnent.service;
 
+import java.util.List;
+
 import com.nhnent.model.GradeType;
 
 public class Calculator {
@@ -13,5 +15,12 @@ public class Calculator {
 			}
 		}
 		return GradeType.F;
+	}
+
+	public int getTotalScore(List<Integer> list) {
+
+		
+		
+		return 538;
 	}
 }

@@ -1,11 +1,11 @@
 package com.nhnent.model;
 
 public enum GradeType {
-	A("A?숈젏", 90, 100),
-	B("B?숈젏", 80, 89),
-	C("C?숈젏", 70, 79),
-	D("D?숈젏", 60, 69),
-	F("F?숈젏", 0, 59);
+	A("A학점", 90, 100),
+	B("B학점", 80, 89),
+	C("C학점", 70, 79),
+	D("D학점", 60, 69),
+	F("F학점", 0, 59);
 	
 	private String description;
 	private long lowScore;
@@ -27,16 +27,5 @@ public enum GradeType {
 	
 	public long getLowScore() {
 		return lowScore;
-	}
-	
-	public static GradeType getGradeType(long score) {
-		
-		for (GradeType type : GradeType.values()) {
-			
-			if (score >= type.lowScore && score <= type.highScore) {
-				return type;
-			}
-		}
-		return F;
 	}
 }
