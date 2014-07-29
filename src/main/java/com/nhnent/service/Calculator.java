@@ -45,7 +45,9 @@ public class Calculator {
 	}
 
 	public int getAverageScore(List<Integer> list) {
-		// TODO Auto-generated method stub
-		return 92;
+		
+		int result = Math.abs(getTotalScore(list) / list.size());
+		
+		return result;
 	}
 }
