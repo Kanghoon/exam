@@ -2,7 +2,6 @@ package com.nhnent.service;
 
 import static org.junit.Assert.*;
 
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
@@ -64,5 +63,19 @@ public class CalculatorTest {
 		
 		assertEquals(expected, actual);
 	}
-
+	
+	/**
+	 * Test get average score_리스트형태로_학점을_받으면_평균을_반환한다.
+	 *
+	 * @throws Exception the exception
+	 */
+	@Test
+	public void testGetAverageScore_리스트형태로_학점을_받으면_평균을_반환한다() throws Exception {
+		int expected = 92;
+		
+		List<Integer> list = Arrays.asList(97, 100, 92, 86, 83, 92);
+		int actual = calculator.getAverageScore(list);
+		
+		assertEquals(expected, actual);
+	}
 }
