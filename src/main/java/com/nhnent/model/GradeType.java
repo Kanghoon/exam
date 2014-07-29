@@ -1,5 +1,10 @@
 package com.nhnent.model;
 
+/**
+ * 등급 타입
+ *
+ * @author Kanghoon Choi
+ */
 public enum GradeType {
 	A("A학점", 90, 100),
 	B("B학점", 80, 89),

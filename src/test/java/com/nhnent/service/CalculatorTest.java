@@ -11,7 +11,7 @@ import org.junit.Test;
 import com.nhnent.model.GradeType;
 
 /**
- * The Class CalculateTest.
+ * @author Kanghoon Choi
  */
 public class CalculatorTest {
 	
@@ -38,7 +38,7 @@ public class CalculatorTest {
 		GradeType actual = calculator.calculate(85);
 		assertEquals(GradeType.B, actual);
 	}
-	
+
 	/**
 	 * Test calculate_60점_이하이면_ f를_받는다.
 	 *
@@ -64,4 +64,5 @@ public class CalculatorTest {
 		
 		assertEquals(expected, actual);
 	}
+
 }
