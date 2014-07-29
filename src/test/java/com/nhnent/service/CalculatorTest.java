@@ -2,7 +2,6 @@ package com.nhnent.service;
 
 import static org.junit.Assert.*;
 
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
@@ -11,7 +10,7 @@ import org.junit.Test;
 import com.nhnent.model.GradeType;
 
 /**
- * The Class CalculateTest.
+ * @author Kanghoon Choi
  */
 public class CalculatorTest {
 	
@@ -38,7 +37,7 @@ public class CalculatorTest {
 		GradeType actual = calculator.calculate(85);
 		assertEquals(GradeType.B, actual);
 	}
-	
+
 	/**
 	 * Test calculate_60점_이하이면_ f를_받는다.
 	 *
@@ -65,4 +64,19 @@ public class CalculatorTest {
 		assertEquals(expected, actual);
 	}
 	
+	
+	/**
+	 * Test get average score_리스트형태로_학점을_받으면_평균을_반환한다.
+	 *
+	 * @throws Exception the exception
+	 */
+	@Test
+	public void testGetAverageScore_리스트형태로_학점을_받으면_평균을_반환한다() throws Exception {
+		int expected = 92;
+		
+		List<Integer> list = Arrays.asList(97, 100, 92, 86, 83, 92);
+		int actual = calculator.getAverageScore(list);
+		
+		assertEquals(expected, actual);
+	}
 }
