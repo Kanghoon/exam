@@ -39,7 +39,6 @@ public class Calculator {
 	}
 	
 	public int getAverageScore(List<Integer> list) {
-		// TODO Auto-generated method stub
-		return 92;
+		return (int) Math.round(list.stream().mapToInt(e -> e).average().getAsDouble());
 	}
 }
