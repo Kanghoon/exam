@@ -44,6 +44,12 @@ public class Calculator {
 		return result;
 	}
 
+	/**
+	 * 평균계산
+	 *
+	 * @param 학점 리스트
+	 * @return 총점
+	 */
 	public int getAverageScore(List<Integer> list) {
 		
 		int result = Math.round((float)getTotalScore(list) / (float)list.size());
