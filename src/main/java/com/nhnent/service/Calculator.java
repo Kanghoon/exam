@@ -46,7 +46,7 @@ public class Calculator {
 
 	public int getAverageScore(List<Integer> list) {
 		
-		int result = Math.abs(getTotalScore(list) / list.size());
+		int result = Math.round((float)getTotalScore(list) / (float)list.size());
 		
 		return result;
 	}
