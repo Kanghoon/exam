@@ -38,6 +38,12 @@ public class Calculator {
 		return list.stream().mapToInt(e -> e).sum();
 	}
 	
+	/**
+	 * 평균계산
+	 *
+	 * @param 학점 리스트
+	 * @return 총점
+	 */
 	public int getAverageScore(List<Integer> list) {
 		return (int) Math.round(list.stream().mapToInt(e -> e).average().getAsDouble());
 	}
