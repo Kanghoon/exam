@@ -1,3 +1,9 @@
+/*
+ * @(#) CalculatorTest.java 2014. 7. 31 
+ *
+ * Copyright 2014 NHN Ent. All rights Reserved. 
+ * NHN PROPRIETARY/CONFIDENTIAL. Use is subject to license terms.
+ */
 package com.nhnent.service;
 
 import static org.junit.Assert.*;
