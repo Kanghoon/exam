@@ -5,6 +5,7 @@ import static org.junit.Assert.*;
 import java.util.Arrays;
 import java.util.List;
 
+import org.junit.Before;
 import org.junit.Test;
 
 import com.nhnent.model.GradeType;
@@ -14,7 +15,12 @@ import com.nhnent.model.GradeType;
  */
 public class CalculatorTest {
 	
-	private Calculator calculator = new Calculator();
+	private Calculator calculator;
+	
+	@Before
+	public void setUp() throws Exception {
+		calculator = new Calculator();
+	}
 
 	/**
 	 * Test calculate_90점_이상이면_ a를_받는다.
